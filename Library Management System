@@ -1,0 +1,631 @@
+
+IBM CAREER EDUCATION 
+ 
+ MAIN PROJECT 
+DOMAIN NAME: JAVA 
+ 
+LIBRARY MANAGEMENT SYSTEM 
+
+
+Submitted By :-
+Deep Shah(18162101006) 
+Kenil Patel(18162101020)
+ 
+ 
+ 
+ 
+ 
+SOFTWARE SPECIFICATIONS 
+	OPERATING SYSTEM  	: 	Linux / Windows / IOS 
+	ENVIRONMENT  	 	: 	Blue J 
+HARDWARE SPECIFICATIONS 
+ PROCESSOR   	 	:  	PENTIUM IV 2.8MHz 
+ RAM  	 	 	: 	256 MB SD RAM 
+ MONITOR  	 	: 	15” COLOR 
+ HARD DISK 	 	: 	40 GB 
+ FLOPPY DRIVE  	: 	1.44 MB 
+ 
+DESCRIPTION  
+   INTRODUCTION: 
+An Integrated Library System (ILS) or Library Management System (LMS) is an enterprise resource planning system for a    library, which is used to add new books to the library record, to maintain record of books being issued and returned and to maintain record of people issuing and returning books.
+
+
+DESCRIPTION: 
+It is a project which aims in developing a computerized system to maintain all the daily work of library. It is used by the librarian to manage the library using a computerised system where he/she can record various transactions such addition of book, issue of books, return of books, etc. 
+
+Books and students maintenance modules are also in this system which would keep record of students using the library and also detailed description about the books a library contains. 
+All these modules will be able to help librarian mange the library system effectively and with more convenience as compared to the library systems which are not computerised. 
+
+
+
+
+
+
+ADVANTAGES: 
+•	Reduces the human efforts. 
+•	As the system is computerised so making it fast, this leads to time saving. 
+•	Saves the cost of stationery. 
+•	Risk of losing record is reduced. 
+•	Most importantly searching becomes quite easy. 
+DISADVANTAGES: 
+•	It Is tedious.
+•	Software needs to be updated regularly. 
+•	The existing way of managing library is quite flexible. 
+
+
+
+LIBRARY MANAGEMENT SYSTEM  
+PICTURES 
+  
+• Library 
+  
+•	Managing Library 
+ 
+  
+•	Record of Students 
+ LIBRARY MANAGEMENT SYSTEM 
+ 
+AIM: 
+To create a computerised library management system which:- 
+•	Adds a new book to the library record 
+•	Book Issue 
+•	Book return 
+•	Shows due list (list of students who haven’t returned the book) 
+ 
+PROGRAM: 
+•	HTML CODE:
+•	<!DOCTYPE html>
+•	<html>
+•	<head>
+•	<meta name="viewport" content="width=device-width, initial-scale=1">
+•	<style>
+•	body{font-family: Arial, Helvetica, sans-serif;}
+•	
+•	.mrq
+•	{
+•		background-color:black;
+•		opacity:0.6;
+•		color:white;
+•		font-size:25px;
+•	}
+•	input[type=text], input[type=password] {
+•	  width: 100%;
+•	  padding: 12px 20px;
+•	  margin: 8px 0;
+•	  display: inline-block;
+•	  border: 1px solid #ccc;
+•	  box-sizing: border-box;
+•	}
+•	
+•	input[type=text]:focus, input[type=password]:focus {
+•	  background-color: #ddd;
+•	  outline: none;
+•	}
+•	
+•	
+•	button {
+•	  background-color: #4CAF50;
+•	  color: white;
+•	  padding: 14px 20px;
+•	  margin: 8px 0;
+•	  border: none;
+•	  cursor: pointer;
+•	  width: 100%;
+•	}
+•	
+•	button:hover {
+•	  opacity: 0.8;
+•	}
+•	
+•	.cancelbtn {
+•	  width: auto;
+•	  padding: 10px 18px;
+•	  background-color: #f44336;
+•	}
+•	.signupbtn{
+•	  width: auto;
+•	  padding: 10px 18px;
+•	  background-color: green;
+•	}
+•	
+•	.imgcontainer {
+•	  text-align: ce;
+•	  margin: 24px 0 12px 0;
+•	  position: relative;
+•	}
+•	
+•	img.avatar {
+•	  width: 40%;
+•	  border-radius: 50%;
+•	}
+•	
+•	.container {
+•	  margin-top:1%;
+•	  margin-bottom:10%;
+•	  padding: 16px;
+•	}
+•	
+•	span.psw {
+•	  float: right;
+•	  padding-top: 16px;
+•	}
+•	
+•	.modal {
+•	  display: none; 
+•	  position: fixed; 
+•	  z-index: 1; 
+•	  left: 0;
+•	  top: 0;
+•	  width: 100%; 
+•	  height: 100%; 
+•	  overflow: auto;
+•	  background-color: rgb(0,0,0); 
+•	  background-color: rgba(0,0,0,0.4); 
+•	  padding-top: 0px;
+•	}
+•	
+•	.modal1 {
+•	  display: none; 
+•	  position: fixed; 
+•	  z-index: 1; 
+•	  left: 0;
+•	  top: 0;
+•	  width: 100%; 
+•	  height: 100%; 
+•	  overflow: auto;
+•	  background-color: rgb(f,0,0); 
+•	  background-color: rgba(0,0,0,0.4); 
+•	  padding-top: 0px;
+•	}
+•	
+•	.modal-content {
+•	  background-color: #fefefe;
+•	  margin: -5% auto 15% auto; 
+•	  border: 1px solid #888;
+•	  width: 25%;  
+•	}
+•	
+•	.close {
+•	  position: absolute;
+•	  right: 25px;
+•	  top: 0;
+•	  color: #000;
+•	  font-size: 35px;
+•	  font-weight: bold;
+•	}
+•	
+•	.close:hover,
+•	.close:focus {
+•	  color: red;
+•	  cursor: pointer;
+•	}
+•	
+•	hr {
+•	  border: 1px solid #f1f1f1;
+•	  margin-bottom: 25px;
+•	}
+•	 
+•	.animate {
+•	  -webkit-animation: animatezoom 0.6s;
+•	  animation: animatezoom 0.6s
+•	}
+•	
+•	@-webkit-keyframes animatezoom {
+•	  from {-webkit-transform: scale(0)} 
+•	  to {-webkit-transform: scale(1)}
+•	}
+•	  
+•	@keyframes animatezoom {
+•	  from {transform: scale(0)} 
+•	  to {transform: scale(1)}
+•	}
+•	
+•	@media screen and (max-width: 300px) {
+•	  span.psw {
+•	     display: block;
+•	     float: none;
+•	  }
+•	  .cancelbtn {
+•	     width: 100%;
+•	  }
+•	}
+•	h1 {
+•		margin-top: 100px;
+•		font-size: 40px;
+•	}
+•	
+•	.welcome_page {
+•		position: top-center;
+•		margin-bottom: 100px;
+•		margin-left: 300px;
+•		margin-top: 100px;
+•		margin-right: 70px;
+•		opacity: 0.6;
+•	}
+•	.align1 {
+•		position: absolute;
+•		top: 120px;
+•		left: 50%;
+•		transform: translate(-50%, -50%);
+•		opacity: 0.9;
+•	}
+•	.align2 {
+•		position: absolute;
+•		top: 170px;
+•		left: 50%;
+•		transform: translate(-50%, -50%);
+•		opacity: 0.9;
+•	}
+•	.align3 {
+•		color: white;	
+•		position: absolute;
+•		top: 370px;
+•		left: 50%;
+•		transform: translate(-50%, -50%);
+•	}
+•	
+•	.align4 {
+•		position: absolute;
+•		top: 490px;
+•		width: 25%;
+•		left: 62%;
+•		transform: translate(-50%, -50%);
+•	}
+•	
+•	.align5 {
+•		position: absolute;
+•		top: 490px;
+•		width: 23%;
+•		left: 37%;
+•		background-color: rgb(f,0,0); 
+•		transform: translate(-50%, -50%);
+•	}
+•	
+•	.align6 {
+•		position: absolute;
+•		top: 530px;
+•		width: 23%;
+•		left: 62%;
+•		transform: translate(-50%, -50%);
+•	}
+•	</style>
+•	</head>
+•	<body background="library.jpg">
+•	
+•	<marquee class="mrq"width="100%"  behavior="alternate" direction="left" height="25px" color="black" scrollamount="5">
+•	<b>Welcome To Institute of Computer Technology Library.</b>
+•	</marquee>
+•	<div class="welcome_page">
+•		<img src="E:\SEM 3 PRACTICALS\Java Project\HTML CODE\black.png">
+•		<div class="align1"><h1 align="center"><font color="white">WELCOME TO</font></h1></div>
+•		<div class="align2"><h1 align="center"><font color="white">Library Management System</font></h1></div>
+•		 <div class="align3">
+•	      <label for="uname"><b>Username</b></label>
+•	      <input type="text" placeholder="example@gmail.com" name="uname" required>
+•	
+•	      <label for="psw"><b>Password</b></label>
+•	      <input type="password" placeholder="example123" name="psw" required>
+•	        
+•	      <label>
+•	        <input type="checkbox" checked="checked" name="remember"><font color="white"> Remember me</font>
+•	      </label>
+•	    </div>
+•		<div class="align4"><button type="submit" formaction="https://www.w3docs.com">Login</button></div>
+•		<div class="align5"><button onclick="document.getElementById('id02').style.display='block'">Sign Up</button></div>
+•		<div class="align6"><span class="psw"> <font color="white">Forgot </font> <a href="#"> password?</a></span></div>
+•	</div>
+•	</div>
+•	
+•	<div id="id02" class="modal1">
+•	  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+•	  <form class="modal-content" action="/action_page.php">
+•	    <div class="container">
+•	      <h1>Sign Up</h1>
+•	      <p>Please fill in this form to create an account.</p>
+•	      <hr>
+•	      <label for="email"><b>Email</b></label>
+•	      <input type="text" placeholder="Enter Email" name="email" required>
+•	
+•	      <label for="psw"><b>Password</b></label>
+•	      <input type="password" placeholder="Enter Password" name="psw" required>
+•	
+•	      <label for="psw-repeat"><b>Repeat Password</b></label>
+•	      <input type="password" placeholder="Repeat Password" name="psw- 
+repeat" required>
+•	      
+•	      <label>
+•	        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+•	      </label>
+•	
+•	      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+•	
+•	      <div class="clearfix">
+•	        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+•	        <button type="submit" class="signupbtn">Sign Up</button>
+•	      </div>
+•	    </div>
+•	  </form>
+•	</div>
+•	<script>
+•	var modal = document.getElementById('id02');
+•	
+•	window.onclick = function(event) {
+•	  if (event.target == modal) {
+•	    modal.style.display = "none";
+•	  }
+•	}
+•	</script>
+•	</body>
+•	</html>
+
+•	JAVA CODE:
+•	import java.util.*;
+•	public class library
+•	{
+•		int Code[]=new int[5];
+•		float Price[]=new float[5];
+•		String Name[]=new String[5];
+•		String Author[]=new String[5];
+•		int present_copies_left[]=new int[5];
+•		int a=0;
+•		int roll_no[]=new int[100];
+•		String student_name[]=new String[100];
+•		public void set_student_data()								//SET_STUDENT_DATA//
+•	 	{
+•	 		for(int i=0;i<100;i++)
+•	 		{
+•				roll_no[i]=0;
+•				student_name[i]="NULL";
+•			}
+•		}
+•		public void add_new_book(String name,String author,int code,int copies, float price)			//ADD_NEW_BOOK//
+•	 	{
+•			if(a<5)
+•		 	{
+•				Name[a]=name;
+•				Author[a]=author;
+•				Code[a]=code;
+•				present_copies_left[a]=copies;
+•				Price[a] = price;
+•				a++;
+•			}
+•			else
+•			{
+•				System.out.println("LIMIT ACHIEVED");
+•	 		}
+•		}
+•		public void issue_book(int CODE, int ROLL_NO, String NAME)				//ISSUE_BOOK//
+•		{
+•			int n=index(CODE);
+•			if(n==-1)
+•			{
+•				System.out.println("\t\t --------------");
+•				System.out.println("\t\t |NO SUCH CODE|");
+•				System.out.println("\t\t --------------");
+•			}
+•			if(present_copies_left[n]==0)
+•			{
+•				System.out.println("\t\t --------------");
+•				System.out.println("\t\t |NO Copies Left|");
+•				System.out.println("\t\t --------------");
+•			}
+•			else
+•			{
+•				--present_copies_left[n];
+•				System.out.println("\t\t ------------------------------------------");
+•				System.out.println("\t\t |New Book Issued By "+NAME+"("+ROLL_NO+")|");
+•				show_details(n);
+•	 			System.out.println("\t\t |COPIES LEFT : "+present_copies_left[n]);
+•				System.out.println("\t\t ------------------------------------------");
+•	 		}
+•	 	}
+•		public void student_issued_book_data()							//STUDENT_ISSUED_BOOK_DATA//
+•		{
+•			for(int i=0;i<a;i++)
+•			{
+•				System.out.println("\t\t --------------------------------------------------------------------"); 
+•				System.out.println("\t\t |"+Code[i]+"\tStudent's Name:"+student_name[i]+"\tRoll No.:"+roll_no[i]+"|");
+•				System.out.println("\t\t ---------------------------------------------------------------------");
+•			}
+•		}							
+•		public void return_book(int CODE)							//RETURN_BOOK//
+•	 	{
+•			int n=index(CODE);
+•			if(n==-1)
+•			{
+•				System.out.println("\t\t --------------");
+•				System.out.println("\t\t |NO SUCH CODE|");
+•				System.out.println("\t\t --------------");
+•			}
+•			else
+•			{
+•				System.out.println("\t\t -----------------------------------------");
+•				System.out.println("\t\t |Details of books returned:-");
+•				show_details(n);
+•				++present_copies_left[n];
+•				System.out.println("\t\t |COPIES LEFT : "+present_copies_left[n]);
+•				System.out.println("\t\t |Book returned");
+•				System.out.println("\t\t ------------------------------------------");
+•			}
+•		}
+•		public void show_details(int ind)							//SHOW_DETAILS//
+•		{
+•			System.out.println("\t\t |BOOK's NAME : "+Name[ind]+"|");
+•			System.out.println("\t\t |AUTHOR's NAME : "+Author[ind]+"|");
+•		}	
+•		public int index(int CODE)								//INDEX//
+•	 	{
+•			for(int i=0;i<=a;i++)
+•			{
+•				if(Code[i]==CODE)
+•				{
+•					return i;
+•				}
+•			}
+•			return -1;
+•		}
+•		public void books_in_library_left()							//BOOKS_IN_LIBRARY_LEFT//
+•	 	{
+•			for(int i=0;i<a;i++)
+•			{
+•				System.out.println("\t\t ----------------------------");
+•				System.out.println("\t\t |"+Code[i] + "\t" + Name[i]+"|");
+•				System.out.println("\t\t ----------------------------");
+•			}
+•		}
+•		public void add_student_data(String Student_name,int Roll_no)			//ADD_STUDENT_DATA//
+•		{
+•			for(int i=0;i<100;i++)
+•			{
+•				if(roll_no[i]==0)
+•				{
+•					roll_no[i]=Roll_no;
+•					student_name[i]=Student_name;
+•					break;
+•				}
+•			}
+•		}
+•		public void remaining_student_data(int Roll_no)						//REMAINING_STUDENT_DATA//
+•	 	{
+•			for(int i=0;i<100;i++)
+•			{
+•				if(roll_no[i]==Roll_no)
+•	 			{
+•					roll_no[i]=0;
+•					student_name[i]="Null";
+•					break;
+•				}
+•				else
+•				{
+•					System.out.println("\t\t ----------------------");
+•					System.out.println("\t\t |Roll Number Not Found");
+•					System.out.println("\t\t ----------------------");
+•					break;
+•				}
+•	 		}
+•	 	}
+•		public void display_due()								//DISPLAY_DUE//
+•		{
+•			for(int i=0;i<100;i++)
+•			{
+•				if(roll_no[i] != 0)
+•				{
+•					System.out.println("\t\t -----------------------------------------------------------------------");
+•					System.out.println("\t\t |ROLL_NO :"+roll_no[i]+"   STUDENT_NAME :"+student_name[i]+"   BOOK'S_NAME :"+Name[i]+"|");
+•					System.out.println("\t\t ------------------------------------------------------------------------");
+•				}
+•				else
+•				{
+•					System.out.println("\t\t ---------------------");
+•					System.out.println("\t\t |NO DUE'S TO DISPLAY|");
+•					System.out.println("\t\t ---------------------");
+•					break;
+•				}
+•			}
+•	 	}
+•	public static void main(String args[])
+•	{
+•		library ob = new library();
+•		ob.set_student_data();
+•		int choose;
+•		int roll_no,code,copies;
+•		int count = 101;
+•		float price;
+•		String name;
+•		String author;
+•		Scanner sc = new Scanner(System.in);	
+•	 	System.out.println("\t \t\t\t\t\t\t\t   WELCOME....!!!\n\t\t\t\t\t\t\tThis is Library Managment System");
+•		for(;;)
+•		{
+•	 		System.out.println("1. Add a book in Library \n2. Issue a Book \n3. Return a Book \n4. display due list ");
+•			System.out.print("->");
+•		 	choose=sc.nextInt();
+•	 		while(choose==1||choose==2||choose==3||choose==4)
+•	 		{
+•	 			if(choose == 1)								//ADD//
+•	 		{
+•		 			System.out.println("Enter code of Book to be added :");
+•					code = sc.nextInt();
+•					//code = count;
+•					//count++;
+•					System.out.println("Enter number of Copies :");
+•					copies = sc.nextInt();
+•					System.out.println("Enter Name of Book:");
+•					sc.nextLine();
+•					name = sc.nextLine();
+•					System.out.println("Enter Name of Author :");
+•					author = sc.nextLine();
+•					System.out.println("Enter Price for your Book :");
+•					price = sc.nextFloat();
+•					ob.add_new_book(name,author,code,copies,price);
+•					System.out.println("\t\t |-----------------------|");
+•					System.out.println("\t\t |--> New book added <-- |");
+•					System.out.println("\t\t |-----------------------|");
+•					break;
+•	 			}
+•				if(choose == 2)							//ISSUE//
+•		 		{
+•					System.out.println("Please Enter Code of Book to be issued :"); 
+•		ob.books_in_library_left();
+•		System.out.print("-> ");
+•		code = sc.nextInt();
+•		System.out.println("Please Enter your Roll Number :");
+•		roll_no = sc.nextInt();
+•	System.out.println("Please Enter Your Name :");
+•		sc.nextLine();
+•		name = sc.nextLine();
+•		ob.issue_book(code,roll_no,name);
+•		ob.add_student_data(name,roll_no);		
+•		break;
+•		}	
+•	if(choose == 3)							//RETURN//
+•		{
+•		System.out.println("Please Enter your CODE of Book to be returned ");
+•		ob.student_issued_book_data();
+•		code = sc.nextInt();
+•		System.out.println("Enter your ROLL NUMBER");
+•		sc.nextLine();
+•		roll_no = sc.nextInt();
+•		ob.return_book(code);
+•		ob.remaining_student_data(roll_no);
+•		break;
+•		}
+•		 if(choose == 4)									//DISPLAY//
+•		{
+•		ob.display_due();
+•		break;
+•		}
+•	 }
+•		}
+•	}•	}
+
+EXPLANATION ABOUT PROJECT: 
+This project basically has 4 modules: 
+1.	Adding Book: - Addition of a new book to the library record. Adding details of the book which is to be added. 
+2.	Book Issue: - Students issue book through their school/college unique id’s. 
+3.	Book return: - Student will return the book on the designated date. 
+4.	Due List: - For checking the list of students who haven’t returned their book. 
+OUTPUT SCREENSHOTS: 
+ 
+
+    
+ 
+ 
+ 
+ 
+ 
+
+REFERENCES:  
+1.	Wikipedia(Library Management System page) 
+2.	Moodle (Sample Project) 
+3.	https://www.w3schools.com
+4.	Google Images 
+
+
+
+CONCLUSION: 
+1.	A better, smart, time efficient and easy to manage alternative of existing ways of managing library record. 
+2.	This project provides a computerized version of library management system which will benefit the students as well as the staff of the library.  
+
+ 
+ 
